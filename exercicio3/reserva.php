@@ -1,3 +1,10 @@
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $name = $_POST['name'];
+    $date = $_POST['date'];
+    $horario = $_POST['horario'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,9 +24,9 @@
         <form action="$_GET">
             <h1>Informações sobre a reserva</h1>
             <div class="info">
-                <label for="name">Nome do Solicitante: <label for="info-name">Kaique</label> </label>
-                <label for="name">Data: <label for="info-date">19/09/24</label> </label>
-                <label for="name">Horário: <label for="info-time">14:07</label> </label>
+                <label for="name">Nome do Solicitante: <label for="info-name" name="info-name"><?php echo $name ?></label> </label>
+                <label for="name">Data: <label for="info-date" name="info-date"><?php echo $date ?></label> </label>
+                <label for="name">Horário: <label for="info-time" name="info-time"><?php echo $horario ?></label> </label>
             </div>
 
         </form>

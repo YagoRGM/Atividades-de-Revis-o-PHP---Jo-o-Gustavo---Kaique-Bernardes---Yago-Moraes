@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,20 +14,20 @@
 
 <body>
     <main>
-        <form action="$_GET">
+        <form action="reserva.php" method="post">
             <h1>Reserva de Sala de Reunião</h1>
 
             <label for="name">Nome do Solicitante</label>
-            <input type="text" id="name" required>
+            <input name="name" type="text" id="name" required>
 
             <label for="name">Data</label>
-            <input type="date" id="date" required>
+            <input name="date" type="date" id="date" required>
 
             <label for="name">Horário</label>
-            <input type="time" id="time" required>
+            <input name="horario" type="time" id="time" required>
 
 
-            <button formaction="reserva.html">Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </main>
 </body>
