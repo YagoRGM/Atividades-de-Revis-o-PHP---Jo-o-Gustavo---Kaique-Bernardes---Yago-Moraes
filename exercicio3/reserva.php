@@ -1,8 +1,9 @@
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $name = $_POST['name'];
-    $date = $_POST['date'];
-    $horario = $_POST['horario'];
+$name = $date = $horario = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nameuser = $_POST['nameuser'];
+    $dateuser = $_POST['dateuser'];
+    $timeuser = $_POST['timeuser'];
 }
 ?>
 <!DOCTYPE html>
@@ -24,9 +25,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form action="$_GET">
             <h1>Informações sobre a reserva</h1>
             <div class="info">
-                <label for="name">Nome do Solicitante: <label for="info-name" name="info-name"><?php echo $name ?></label> </label>
-                <label for="name">Data: <label for="info-date" name="info-date"><?php echo $date ?></label> </label>
-                <label for="name">Horário: <label for="info-time" name="info-time"><?php echo $horario ?></label> </label>
+                <p>Nome: <span style='color:#0F880F;'><?php echo $nameuser; ?></span></p>
+                <p>Data: <span style='color:#0F880F;'><?php echo $dateuser; ?></span></p>
+                <p>Horário: <span style='color:#0F880F;'><?php echo $timeuser; ?></span></p>
             </div>
 
         </form>
@@ -69,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 25px;
+            font-size: 35px;
         }
 
         button {

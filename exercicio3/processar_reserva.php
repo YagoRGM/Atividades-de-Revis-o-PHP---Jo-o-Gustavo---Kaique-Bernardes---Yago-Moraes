@@ -18,13 +18,13 @@
             <h1>Reserva de Sala de Reunião</h1>
 
             <label for="name">Nome do Solicitante</label>
-            <input name="name" type="text" id="name" required>
+            <input name="nameuser" type="text" id="name" required>
 
             <label for="name">Data</label>
-            <input name="date" type="date" id="date" required>
+            <input name="dateuser" type="date" id="date" required>
 
             <label for="name">Horário</label>
-            <input name="horario" type="time" id="time" required>
+            <input name="timeuser" type="time" id="time" required>
 
 
             <button type="submit">Enviar</button>
