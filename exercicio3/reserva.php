@@ -1,5 +1,4 @@
 <?php
-$name = $date = $horario = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nameuser = $_POST['nameuser'];
     $dateuser = $_POST['dateuser'];
