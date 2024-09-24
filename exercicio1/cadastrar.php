@@ -14,13 +14,11 @@
 <body>
     <div id="container">
         <?php
-        
         echo "<h2>Cliente cadastrado com sucesso!</h2><br>";
         echo "<ul><li><strong>Bem vindo!,</strong> " . $_POST["nome"] . "</li><br>";
         echo "<li><strong>Email:</strong> " . $_POST["email"] . "</li><br>";
         echo "<li><strong>Telefone: </strong>" . $_POST["tel"] . "</li></ul>";
         ?>   
     </div>
-
 </body>
 </html>

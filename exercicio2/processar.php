@@ -12,9 +12,9 @@
 <div class="info">
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $product_name = htmlspecialchars($_POST['product_name']);
-        $rating = htmlspecialchars($_POST['star']);
-        $comment = htmlspecialchars($_POST['comment']);
+        $product_name = $_POST['product_name'];
+        $rating = $_POST['star'];
+        $comment = $_POST['comment'];
     
         echo "<h2>Feedback Recebido!</h2>";
         echo "<div class='feedback-item' id='feedback1'><strong>Nome do Produto:</strong> <span>" . $product_name . "</span></div>";
