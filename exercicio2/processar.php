@@ -10,7 +10,6 @@
 </head>
 <body>
 <div class="info">
-<form action="$_GET">
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $product_name = htmlspecialchars($_POST['product_name']);
@@ -25,6 +24,5 @@
     } 
     ?>
 </div>
-</form>
 </body>
 </html>
